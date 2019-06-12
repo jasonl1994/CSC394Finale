@@ -56,7 +56,8 @@ export default class Register extends React.Component {
     .then(res => res.json())
     .catch(err => console.log(err))
 
-    console.log(this.state)
+    //console.log(this.state)
+	this.setState({redirect: true});
     //this.clearInputs();
   }
 	
